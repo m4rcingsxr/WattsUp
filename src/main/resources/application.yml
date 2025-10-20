@@ -1,0 +1,8 @@
+server:
+  port: 8080
+
+datasource:
+  reactiveUrl: postgresql://localhost:5432/quarkus
+  jdbcUrl: jdbc:postgresql://localhost:5432/quarkus?reWriteBatchedInserts=true
+  username: quarkus
+  password: quarkus

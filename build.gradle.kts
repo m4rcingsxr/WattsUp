@@ -20,6 +20,7 @@ val vertxVersion = "5.0.4"
 val junitJupiterVersion = "5.9.1"
 val slf4jVersion = "2.0.17"
 val log4jVersion = "2.25.2"
+val flywayCore = "11.14.1"
 
 val mainVerticleName = "com.m4rcingsxr.github.wattsup.MainVerticle"
 val launcherClassName = "io.vertx.launcher.application.VertxApplication"
@@ -36,10 +37,15 @@ dependencies {
   implementation("org.apache.logging.log4j:log4j-core")
   implementation("org.apache.logging.log4j:log4j-slf4j2-impl")
   implementation("io.vertx:vertx-launcher-application")
+  implementation("io.vertx:vertx-config")
+  implementation("io.vertx:vertx-config-yaml")
   implementation("io.vertx:vertx-web-client")
   implementation("io.vertx:vertx-web")
   implementation("io.vertx:vertx-pg-client")
   implementation("io.vertx:vertx-lang-kotlin")
+  implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
+  implementation("com.fasterxml.jackson.core:jackson-databind")
+  implementation("org.flywaydb:flyway-core:$flywayCore")
   testImplementation("io.vertx:vertx-junit5")
   testImplementation("org.junit.jupiter:junit-jupiter:$junitJupiterVersion")
   testRuntimeOnly("org.junit.platform:junit-platform-launcher")

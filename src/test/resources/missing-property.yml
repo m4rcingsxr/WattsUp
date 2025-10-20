@@ -1,0 +1,7 @@
+server:
+
+datasource:
+  reactiveUrl: postgresql://localhost:5432/test
+  jdbcUrl: jdbc:postgresql://localhost:5432/test
+  username: user
+  password: pass
